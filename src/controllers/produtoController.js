@@ -13,18 +13,32 @@ const listarProdutos = () => {
     return produtos;
 }
 
-const listarUmProdutos = () => {};
-const cadastrarProdutos = (produto) => {
+const listarUmProduto = (posicao) => {
+ return produtos [posicao];
+};
+
+
+const editarProduto = (posicao, produto) => {
+
+    produtos[posicao] = produto;
+    return produtos[posicao];
+};
+
+
+const cadastrarProduto = (produto) => {
     produtos.push(produto);
     return produtos
 };
-const editarProdutos = () => {};
-const deletarProdutos = () => {};
+
+const deletarProduto = (posicao) => {
+    produtos = produtos.filter((produto, index) => index!= posicao);
+    return produtos;
+};
 
 module.exports = {
     listarProdutos,
-    listarUmProdutos,
-    cadastrarProdutos,
-    editarProdutos,
-    deletarProdutos,
+    listarUmProduto,
+    cadastrarProduto,
+    editarProduto,
+    deletarProduto,
 }

@@ -4,12 +4,13 @@
   "description": "node com express",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "npx nodemon index.js"
   },
   "keywords": [
     "node"
   ],
-  "author": "Eduardo Rocha",
+  "author": "felipe",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
